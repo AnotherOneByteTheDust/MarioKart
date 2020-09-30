@@ -1,0 +1,46 @@
+{
+  "name": "p5-dsi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "deploy": "gh-pages -d build",
+    "clean": "rm -rf dist package-lock.json node_modules .cache build",
+    "build": "parcel build src/index.html --public-url /dsi-p5-mkart-b3cl0s3r -d build",
+    "check": "eslint src/**/*.js",
+    "fix": "eslint src/**/*.js --fix",
+    "prettier": "prettier --write src/**/*.html src/**/*.css",
+    "style": "stylelint src/css/*.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "gh-pages": "^2.2.0",
+    "husky": "^4.2.5",
+    "postcss": "^7.0.27",
+    "postcss-clean": "^1.1.0",
+    "postcss-font-magician": "^2.3.1",
+    "postcss-mixins": "^6.2.3",
+    "postcss-nesting": "^7.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-simple-vars": "^5.0.2",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "howler": "^2.1.3",
+    "postcss-advanced-variables": "^3.0.1"
+  }
+}
