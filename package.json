@@ -1,5 +1,5 @@
 {
-  "name": "p5-dsi",
+  "name": "MarioKart",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "parcel src/index.html",
     "deploy": "gh-pages -d build",
     "clean": "rm -rf dist package-lock.json node_modules .cache build",
-    "build": "parcel build src/index.html --public-url /dsi-p5-mkart-b3cl0s3r -d build",
+    "build": "parcel build src/index.html --public-url /MarioKart -d build",
     "check": "eslint src/**/*.js",
     "fix": "eslint src/**/*.js --fix",
     "prettier": "prettier --write src/**/*.html src/**/*.css",
