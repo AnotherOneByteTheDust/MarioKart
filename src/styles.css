@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  box-shadow: 0px 0px 30px black;
+  box-shadow: 0 0 30px black;
 }
 
 .road {
@@ -57,9 +57,11 @@ h1 {
   background-color: #473970;
   font-size: 1em;
   font-weight: bold;
+
   &:hover:enabled {
     background-color: #ab8fff;
   }
+
   &:disabled {
     opacity: 50%;
     color: black;
@@ -70,7 +72,7 @@ h1 {
   background-color: black;
   width: 20px;
   height: 384px;
-  box-shadow: -5px 0px 0px white;
+  box-shadow: -5 0 0 white;
 }
 
 #startText {
@@ -81,16 +83,18 @@ h1 {
   background-color: #242424;
   width: 120px;
   height: 120px;
-  box-shadow: inset 0px 0px 10px black;
+  box-shadow: inset 0 0 10px black;
 }
 
 @keyframes rainbow {
   0% {
     background-position: 0% 82%;
   }
+
   50% {
     background-position: 100% 19%;
   }
+
   100% {
     background-position: 0% 82%;
   }
